@@ -4,13 +4,13 @@
     "name": "Amarildo-correa"
   },
   "metadata": {
-    "description": "Marketplace pessoal com o plugin design-doc, documentação de referência do design system do formulário Criar perfil."
+    "description": "Marketplace pessoal com o plugin design-doc, documentação de referência do Design System Promptdown."
   },
   "plugins": [
     {
       "name": "design-doc",
       "source": "./",
-      "description": "Plugin para criação e manutenção de design docs."
+      "description": "Documentação de referência do Design System Promptdown — tokens, componentes e convenções de front-end, documentados projeto a projeto ao longo do tempo."
     }
   ]
 }

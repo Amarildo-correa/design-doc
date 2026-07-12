@@ -1,6 +1,6 @@
 ---
 name: design-doc
-description: Documentação de referência do design system do formulário "Criar perfil" (frontend estático em src/criar-perfil.html, script.js e style.css) — arquitetura da máquina de etapas, tokens CSS (:root), sistema de mosaico de bordas, estados por classe (.app/.panel), fake caret, mirror da bio, validação de etapas, teclado nativo mobile (visualViewport/--kb), restauração de rascunho e acessibilidade. Use esta skill antes de alterar CSS, HTML ou script.js deste formulário, ao estender o formulário com novas etapas/campos, ou ao responder perguntas sobre convenções de tokens, regras de borda ou mecanismos já implementados neste projeto.
+description: Documentação de referência do Design System Promptdown — catálogo evolutivo de tokens, componentes, padrões de arquitetura front-end e convenções de CSS/JS, documentado projeto a projeto conforme novas telas/produtos são incorporados. Cobre hoje o formulário "Criar perfil" (arquitetura da máquina de etapas, tokens CSS, mosaico de bordas, estados por classe, fake caret, mirror da bio, validação de etapas, teclado nativo mobile, restauração de rascunho, acessibilidade); novos projetos são adicionados com o tempo. Use esta skill antes de alterar CSS/HTML/JS de qualquer produto que já tenha documentação aqui, ao estender um formulário/tela existente, ou ao responder perguntas sobre convenções de tokens, regras de borda ou mecanismos já padronizados no design system Promptdown.
 ---
 
 # Design System Promptdown
