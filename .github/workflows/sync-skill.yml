@@ -1,0 +1,29 @@
+name: Sincroniza SKILL.md com DESIGN.md
+
+on:
+  repository_dispatch:
+    types: [design-doc-updated]
+  workflow_dispatch: {}
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sincroniza SKILL.md com o DESIGN.md remoto
+        run: bash scripts/sync-skill-from-design.sh
+
+      - name: Commita e envia mudança, se houver
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- skills/design-doc/SKILL.md; then
+            git add skills/design-doc/SKILL.md
+            git commit -m "Sincroniza SKILL.md com DESIGN.md do criar-perfil"
+            git push
+          else
+            echo "Nenhuma mudança detectada em SKILL.md."
+          fi
