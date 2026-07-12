@@ -1,6 +1,6 @@
 ---
 name: design-doc
-description: Ajuda a criar e revisar design docs seguindo o template em references/DESIGN.md.
+description: Documentação de referência do design system do formulário "Criar perfil" (frontend estático em src/criar-perfil.html, script.js e style.css) — arquitetura da máquina de etapas, tokens CSS (:root), sistema de mosaico de bordas, estados por classe (.app/.panel), fake caret, mirror da bio, validação de etapas, teclado nativo mobile (visualViewport/--kb), restauração de rascunho e acessibilidade. Use esta skill antes de alterar CSS, HTML ou script.js deste formulário, ao estender o formulário com novas etapas/campos, ou ao responder perguntas sobre convenções de tokens, regras de borda ou mecanismos já implementados neste projeto.
 ---
 
 # DESIGN.md
