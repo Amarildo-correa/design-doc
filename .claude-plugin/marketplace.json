@@ -1,0 +1,16 @@
+{
+  "name": "design-doc",
+  "owner": {
+    "name": "Amarildo-correa"
+  },
+  "metadata": {
+    "description": "Marketplace pessoal com o plugin design-doc, documentação de referência do design system do formulário Criar perfil."
+  },
+  "plugins": [
+    {
+      "name": "design-doc",
+      "source": "./",
+      "description": "Plugin para criação e manutenção de design docs."
+    }
+  ]
+}
