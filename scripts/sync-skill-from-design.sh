@@ -19,7 +19,7 @@ if [ -z "$frontmatter" ]; then
     exit 1
 fi
 
-body=$(curl -fsSL "$SOURCE_URL")
+body=$(curl -fsSL "$SOURCE_URL" | sed '1s/^# DESIGN\.md$/# Design System Promptdown/')
 
 {
     printf '%s\n' "$frontmatter"
